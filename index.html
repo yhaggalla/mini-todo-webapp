@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Mini To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Mini To-Do ✅</h1>
+
+    <form id="todoForm" class="row">
+      <input id="todoInput" type="text" placeholder="Add a task..." autocomplete="off" />
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="row small">
+      <button id="clearDone" type="button" class="secondary">Clear done</button>
+      <button id="clearAll" type="button" class="danger">Clear all</button>
+    </div>
+
+    <ul id="todoList" class="list"></ul>
+
+    <p class="hint">Tip: Click a task to mark done ✅</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
